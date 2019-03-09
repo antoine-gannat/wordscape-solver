@@ -1,0 +1,19 @@
+{
+  "name": "wordscapes-solver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoine-gannat/wordscapes-solver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoine-gannat/wordscapes-solver/issues"
+  },
+  "homepage": "https://github.com/antoine-gannat/wordscapes-solver#readme"
+}
