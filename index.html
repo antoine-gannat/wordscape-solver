@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="description" content="Find words for the Wordscapes game" />
     <script>
+        // Display the solver's results in a table element
         function displayResults(results) {
             var resultHtml = "";
+            // Transform the array to html code
             for (var i = 0; i < results.length; i++) {
                 if (i === 0)
                     resultHtml += "<tr>";
@@ -17,9 +19,11 @@
                 resultHtml += "<td>" + results[i] + "</td>";
             }
             resultHtml += "</tr>";
+            // Display the result
             document.getElementById("result-table").innerHTML = resultHtml;
         }
 
+        // Solve the puzzle
         function solve() {
             var wordToFind = document.getElementById("wordtofind").value;
             var availableLetters = document.getElementById("availableletters").value;
@@ -43,14 +47,17 @@
     <main class="container">
         <h1 class="text-center mt-5">Wordscapes Solver</h1>
         <div class="form-group">
-            <label for="wordtofind">Word to find (replace missing letters by: '?')</label>
+            <label for="wordtofind">Word to find</label>
+            <br /><i>Example: "a???" or "???"</i>
             <input type="text" class="form-control" id="wordtofind" placeholder="he??o.." autocomplete="off" />
         </div>
         <div class="form-group">
             <label for="availableletters">Available letters</label>
+            <br /><i>Example: "elhlo"</i>
             <input type="text" class="form-control" id="availableletters" placeholder="abcd.." autocomplete="off" />
         </div>
         <button class="btn btn-primary" onclick="solve()">Find solutions</button>
+        <h2 class="text-center">Results</h2>
         <table class="table" id="result-table">
         </table>
     </main>
