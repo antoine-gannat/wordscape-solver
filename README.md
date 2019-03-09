@@ -13,9 +13,9 @@ In the second field, enter the letters available at the bottom of the screen.
 ## We try to solve this puzzle
 ![in game example](./assets/images/ingame-example.png)
 
-### We are looking for the word starting by an 'i' with a length of 4 characters.
+We are looking for the word starting by an 'i' with a length of 4 characters.
 
-### We enter the following in the website:
+We enter the following in the website:
 ![in game example](./assets/images/example-result.png)
 
-### Then juste press "Find solutions" to display the possible words !
+Then juste press "Find solutions" to display the possible words !
